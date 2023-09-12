@@ -1,3 +1,4 @@
+alert("Bienvenido a mi simulador!")
 const secretNumber = Math.floor(Math.random() * 25 ) + 1
 let attempts = 0;
 
