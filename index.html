@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Simulador de adivinar</title>
+    <title>Simulador de Tienda en Línea</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Simulador de Adivinanza</h1>
-    <p>¡Adivina el número entre 1 y 25!</p>
-    <input type="text" id="guess" placeholder="Adivina el numero!">
-    <button onclick="checkGuess()">Adivinar</button>
-    <p id="mensaje"></p>
+    <h1 class="elTitulo">Simulador De Tienda</h1>
 
-    <script src="main.js"></script>
+    <div>
+        <h2>Productos Disponibles</h2>
+        <ul id="productos">
+            <li>Manzana 1 - $35 <button onclick="agregarAlCarrito(1)">Agregar al carrito</button></li>
+            <li>Limones 2 - $65 <button onclick="agregarAlCarrito(2)">Agregar al carrito</button></li>
+            <li>SalsasPc 3 - $75 <button onclick="agregarAlCarrito(3)">Agregar al carrito</button></li>
+            <li>Verduras 4 - $95 <button onclick="agregarAlCarrito(4)">Agregar al carrito</button></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito"></ul>
+        <p class="elTotal">Total: $<span id="total">0</span></p>
+        <button class="elTotal" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+ <script src="main.js"></script>
 </body>
 </html>
